@@ -86,7 +86,7 @@ class App extends React.Component {
         {
           id: 8,
           title: "It can get worse",
-          upvotes: 32,
+          upvotes: 62,
           downvotes: -47,
           image: meme_8,
         },
@@ -121,7 +121,7 @@ class App extends React.Component {
         {
           id: 13,
           title: "Here they are",
-          upvotes: 38,
+          upvotes: 48,
           downvotes: -35,
           image: meme_13,
         },
