@@ -1,0 +1,132 @@
+/* Meme container */
+
+section {
+    margin: 45px;
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 0.5em;
+    background-color: #dddddd;
+    border-radius: 5px;
+    box-shadow: 5px 5px 14px -6px rgba(0, 0, 0, 0.88);
+  }
+  
+  h1,
+  img,
+  main {
+    grid-column: 2;
+    color: #55585c;
+  }
+  
+  main {
+    width: 100%;
+    margin: auto;
+    text-align: justify;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  /* Title */
+  h1 span {
+    display: block;
+  }
+  
+  .title {
+    border-bottom: thin solid #bbbbbb;
+    border-width: thin 0;
+    padding: 10px 0;
+    font-size: 1em;
+  }
+  
+  /* Typography */
+  h1 {
+    text-align: center;
+  }
+  
+  /* LIKE/DISLIKE SECTION */
+  
+  button {
+    cursor: pointer;
+  }
+  
+  .middle-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .like-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    width: 50%;
+  }
+  
+  .like-button {
+    border: 2px solid #c7c7c7;
+    border-radius: 40px;
+    background-color: #fff;
+    padding: 0.45rem 0.75rem;
+    color: #878787;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    filter: grayscale(100%);
+  }
+  
+  .like-button:hover {
+    border-color: currentColor;
+  }
+  
+  .like-counter {
+    display: inline-block;
+    padding-right: 0.5em;
+    font-size: 1rem;
+    position: relative;
+  }
+  
+  @media only screen and (min-width: 750px) {
+    /* Layout */
+    section {
+      grid-template-columns: 10% 3fr 10%;
+      grid-gap: 1.5em;
+      margin: 45px auto;
+    }
+    main {
+      margin: auto;
+      width: 100%;
+    }
+  
+    .title {
+      font-size: 1em;
+    }
+  }
+  
+  @media only screen and (max-width: 749px) {
+    .title {
+      font-size: 0.7em;
+    }
+  }
+  
+  @media only screen and (max-width: 535px) {
+    .like-button {
+      font-size: 0.7em;
+      padding: 0.2em 0.4em;
+    }
+    .like-counter {
+      font-size: 0.7em;
+    }
+    #root {
+      width: 100vw;
+    }
+  }
+  

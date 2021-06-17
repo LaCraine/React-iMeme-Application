@@ -1,0 +1,64 @@
+/* General rules for landing page */
+
+.landing-wrapper {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+  }
+  
+  /* Image section */
+  
+  .landing-img {
+    width: 50%;
+    padding: 5%;
+  }
+  
+  .landing-img img {
+    width: 50%;
+    margin-left: 20%;
+  }
+  
+  /* Text section */
+  
+  .title-section {
+    width: 50%;
+    padding: 5%;
+    margin: 20px auto;
+  }
+  
+  .landing-title {
+    font-size: 2.5em;
+  }
+  
+  /* Button */
+  
+  .start-btn {
+    background-color: transparent;
+    border: 2px solid #c7c7c7;
+    border-radius: 40px;
+    padding: 10px 20px;
+    font-size: medium;
+    color: #c7c7c7;
+    margin-top: 5%;
+  }
+  
+  .start-btn:hover {
+    background-color: #28527a;
+    color: white;
+  }
+  
+  @media (max-width: 996px) {
+    .landing-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      margin: 10px auto;
+    }
+  
+    .title-section {
+      width: 80%;
+      text-align: center;
+    }
+  }
+  
